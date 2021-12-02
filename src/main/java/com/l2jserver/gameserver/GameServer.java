@@ -274,7 +274,7 @@ public final class GameServer {
 		if (geodata().getPathFinding() > 0) {
 			PathFinding.getInstance();
 		}
-		
+		/* Remove NPS
 		printSection("NPCs");
 		SkillLearnData.getInstance();
 		NpcData.getInstance();
@@ -286,7 +286,7 @@ public final class GameServer {
 		NpcBufferTable.getInstance();
 		GrandBossManager.getInstance().initZones();
 		EventDroplist.getInstance();
-		
+		*/
 		printSection("Auction Manager");
 		ItemAuctionManager.getInstance();
 		
