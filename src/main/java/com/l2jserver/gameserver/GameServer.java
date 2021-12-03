@@ -274,6 +274,7 @@ public final class GameServer {
 		if (geodata().getPathFinding() > 0) {
 			PathFinding.getInstance();
 		}
+		printSection("DELETE NPCs");
 		/* Remove NPS
 		printSection("NPCs");
 		SkillLearnData.getInstance();
@@ -336,7 +337,8 @@ public final class GameServer {
 		
 		printSection("Scripts");
 		ScriptEngineManager.getInstance().executeScriptList(new File(server().getDatapackRoot(), "data/scripts.cfg"));
-		
+
+		printSection("DELETE SpawnTable");
 		//SpawnTable.getInstance().load();
 		DayNightSpawnManager.getInstance().trim().notifyChangeMode();
 		FourSepulchersManager.getInstance().init();
